@@ -1,0 +1,73 @@
+
+/* Body */
+
+body {
+    max-width: 90%;
+    min-width: 60px;
+        
+}
+
+
+header {
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    color: white !important;
+}
+
+#name {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(199, 199, 199, 0.692);
+}
+
+#image{
+    background-color: black;
+    padding: 10px;
+    list-style-type: none;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+#navselect:hover {
+    background-color: darkblue;
+}
+
+#navselect:visited {
+    background-color: darkblue;
+}
+
+#titlenav {
+    background-color: #395697;
+    color: white;
+}
+
+
+
+
+h1{
+    font-family: 'Chilanka', cursive;
+    font-weight: bold;
+}
+header{
+    background-image: url(whiteBG.jpg);
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: #2859c4;
+}

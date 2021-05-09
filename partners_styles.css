@@ -1,0 +1,76 @@
+
+/* XyberXecurity Styles */
+
+#name {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(199, 199, 199, 0.692);
+}
+/* Nav Bar Styles */
+#titlenav{
+    background-color: #395697;
+    color: white;
+}
+.nav-link{
+    color: white !important;
+}
+header{
+    font-family: 'Roboto Slab', serif;
+    background-image: url(whiteBG.jpg);
+}
+/* Body Styles */
+
+body {
+    max-width: 90%;
+    min-width: 760px;
+    /* background-color: rgba(199, 199, 199, 0.692); */
+
+}
+
+/* Quotation Marks */
+.col-7:before{
+    content: open-quote;
+    font-size: 30px;
+    font-weight: bold;
+}
+.col-7:after{
+    content: close-quote;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#botTable{
+    width: 95%;
+}
+h1{
+    font-family: 'Chilanka', cursive;
+
+}
+h2{
+    margin-top: 10px;
+}
+
+
+a.nav-link:hover {
+    background-color: darkblue;
+}
+
+a:visited {
+    background-color: darkblue;
+}
+
+
+/* Background Colors */
+section>div:first-of-type{
+    background-color: #feedbe;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color:#2859c4;
+}

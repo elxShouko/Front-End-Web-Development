@@ -1,0 +1,65 @@
+header{
+    font-family: 'Roboto Slab', serif;
+    background-image: url(whiteBG.jpg);
+}
+a.nav-link:hover {
+    background-color: black;
+}
+
+a.nav-link:visited {
+    background-color: darkblue;
+}
+/* Body */
+
+body {
+    max-width: 90%;
+    min-width: 760px;
+}
+/* Font */
+h3{
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: lobster;
+}
+/* Radio Button Word Styles */
+#radioButton{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+#name {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(199, 199, 199, 0.692);
+}
+h1{
+    font-family: 'Chilanka', cursive;
+
+}
+/* NavBar Styles */
+#titlenav{
+    background-color: #395697;
+    
+}
+.nav-link{
+    color: white !important;
+}
+/* Right Column */
+p{
+    padding-right: 5px;
+}
+/* Forms Styles */
+section#leftCol{
+    background-color: rgb(177, 182, 255);
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color:#2859c4;
+}

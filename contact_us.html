@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>XyberXecurity</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="contact_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="container shadow-lg p-0" id="background">
+    <header id="name">
+        <img class="p-2" src="XyberXecurity1.png" alt="">
+        <h1><strong>XyberXecurity</strong></h1>
+    </header>
+
+    <nav id="titlenav" class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <ul class="navbar-nav nav-fill w-100 font-weight-bold">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+            <li class="nav-item"><a class="nav-link" href="newswire.html">Newswire</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h3 class="pt-2">Feedback</h3>
+
+    <div class="row no-gutters">
+        <section class="col" id="leftCol">
+            <!-- action="contact_us-thankyou.html"  -->
+            <form method="POST" class="p-4 needs-validation" novalidate>
+                <!-- Name -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Your name</span>
+                    </div>
+                    <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+                    <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <!-- Email -->
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+
+                    <div class="input-group-append">
+                        <span class="input-group-text">@example.com</span>
+                    </div>
+                    <div class="invalid-feedback">Please enter your email.</div>
+
+                </div>
+
+                <!-- Contact -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Contact</span>
+                    </div>
+                    <input id="contact" type="number" name="contact" placeholder="(nnn) nnn-nnnn" class="form-control" required>
+                    <div class="invalid-feedback">Please fill in your contact.</div>
+                    <label for="contact"></label>
+                </div>
+
+                <!-- Company -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Company</span>
+                    </div>
+                    <input type="text" name="company" class="form-control" required>
+                    <div class="invalid-feedback">Please fill in your company.</div>
+                </div>
+
+                <!-- YesNo 1 -->
+                <div id="radioButton1" class="formRow"> <label>Did you find our website useful?</label>
+                    <fieldset class="optGroup"> <label for="fYes">Yes</label>
+                        <input name="usefulness" id="fYes" value="yes" type="radio" /> <label for="fNo">No</label>
+                        <input name="usefulness" id="fNo" value="no" type="radio" /> </fieldset>
+                </div>
+
+                <!-- YesNo 2 -->
+                <div id="radioButton2" class="formRow"> <label>Did you encounter any issues?</label>
+                    <fieldset class="optGroup">
+                        <label for="Yes">Yes</label>
+                        <input name="issues" id="Yes" value="yes" type="radio" />
+
+                        <label for="No">No</label>
+                        <input name="issues" id="No" value="no" type="radio" /> </fieldset>
+
+                </div>
+                <h5>If yes please specify:</h5>
+                <div class="input-group mb-3">
+
+                    <input type="text" name="issues" class="form-control" placeholder="Please specify">
+                </div>
+                <!-- YesNo 3 -->
+                <div id="radioButton3" class="formRow"> <label>Would you purchase products from us in the future?</label>
+                    <fieldset class="optGroup"> <label for="yes">Yes</label>
+                        <input name="purchase" id="yes" value="yes" type="radio" /> <label for="no">No</label>
+                        <input name="purchase" id="no" value="no" type="radio" /> </fieldset>
+                </div>
+
+                <!-- Improve -->
+                <h5>Please tell us how we can improve:</h5>
+                <div class="input-group mb-3">
+                    <input type="text" name="improve" class="form-control" placeholder="Please tell us">
+                </div>
+
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                <!-- <button id="cancel" type="reset" name="cancel" class="btn btn-primary" value="1">Cancel</button> -->
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-primary">Cancel</button>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <h4 class="modal-title">Form Submission</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p></p>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal"
+                                    onclick="gotoPage('contact_us-thankyou.html')">Ok</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </form>
+
+
+
+
+
+
+
+
+        </section>
+        <section class="col ml-5" id="rightCol">
+            <img id="singFlag" src="SingaporeFlag.png" class="img-fluid" alt="">
+            <!-- https://www.londonmet.ac.uk/international/applying/entry-requirements-by-country/ -->
+            <h4 class="pt-5">Call us at: <strong>+65 6988 3241</strong></h4>
+            <h5>Located at: <strong> Tuas Avenue 11 #02-06 Tuas Lot, 639107, Singapore</strong></h5>
+            <h5>Email us at: <strong>XyberXecurity131@gmail.com</strong></h5>
+
+
+            <div class="panel-group" id="accordion">
+                <div class="faqHeader">
+                    <h4 class="mt-2"><strong>FAQ</strong></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseOne">What is a cyber attack?</a>
+                        </h6>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p>Cyber attack: An offensive action by a malicious actor that is intended to undermine the
+                                functions of
+                                networked computers and their related resources, including unauthorized access,
+                                unapproved changes, and
+                                malicious destruction. Examples of cyber attacks include Distributed Denial of Service
+                                (DDoS) and
+                                Man-in-the-Middle (MITM) attacks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseTen">Are cyber security threats increasing?</a>
+                        </h6>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Ans: Yes, threats are increasing exponentially in sophistication, intensity, diversity
+                                and volume. Cyber
+                                experts report significant escalation in external cyber attacks, especially from
+                                criminal organizations
+                                and foreign state sponsored activities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseEleven">What are the differences among the terms cyber attack, cyber
+                                threat & cyber risk?</a>
+                        </h6>
+                    </div>
+                    <div id="collapseEleven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                The terms cyber attack, cyber threat, and cyber risk are interrelated as follows. A
+                                cyber attack is an offensive action, whereas a cyber threat is the possibility that a
+                                particular attack may occur, and the cyber risk associated with the subject threat
+                                estimates the probability of potential losses that may result.
+
+                                For example, a Distributed Denial of Service (DDoS) cyber attack by a botnet is a cyber
+                                threat for many enterprises with online retail websites, where the associated cyber risk
+                                is a function of lost revenues due to website downtime and the probability that a DDoS
+                                cyber attack will occur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseTwelve">What do I do if I suspect that my files or device is in
+                                danger?</a>
+                        </h6>
+                    </div>
+                    <div id="collapseTwelve" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                Please refer to the Services page which is located below our company title by clicking
+                                Services and follow the instructions from there. It will get rid of unwanted threats
+                                from your electronic devices immediately.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseThirteen">What is a backup?</a>
+                        </h6>
+                    </div>
+                    <div id="collapseThirteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                A backup is a copy of the data stored on a device. It's useful for restoring data if
+                                your device crashes or continuing work if your device is lost or stolen.
+
+                                When you back up your data, you create a copy of some or all of the files on your device
+                                and store them in a separate location (which is usually either on a flash drive,
+                                removable hard drive, or in the cloud). Some kinds of backups even store your device
+                                configurations. Backup and recovery software can automate the backup process by
+                                performing backups based on a set schedule.
+
+                                To restore data from a backup, you use either recovery software (to restore full backups
+                                of a device's data and configurations) or manually replace files with copies from the
+                                backup (usually to restore lost or corrupted files).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseFourteen">How often should I back up my data?</a>
+                        </h6>
+                    </div>
+                    <div id="collapseFourteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                It depends on how critical that data is. If it's important that your data be accurate
+                                and available (to you or others), you should consider backing it up often. For example,
+                                you may want to back up critical project data at the end of each day or week.
+
+                                You can use backup and recovery software to automate the backup process and remove much
+                                of the effort involved in performing backups.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseFifteen">Can I just erase sensitive data?</a>
+                        </h6>
+                    </div>
+                    <div id="collapseFifteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                No. Sensitive data needs to be securely erased to ensure that it can't be recovered.
+
+                                When you delete a file using your computer's Recycling Bin (Windows) or Trash (Mac)
+                                feature, what you're actually doing is telling your computer to forget where that file
+                                is located. The file itself—and all the data it contains—is still on your computer, and
+                                hackers can still find it if they search your device's memory. In order to prevent a
+                                file from being recovered, you must securely erase it. When you securely erase a file,
+                                your computer overwrites it with randomly generated data to destroy its original
+                                contents, ensuring they can't be recovered.
+
+                                Always securely erase sensitive files to prevent them from being recovered and
+                                compromised.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+        <footer class="w-100">
+            <div class="float-left">
+                <a style="color: white;" href="source.html">Image Sources</a>
+            </div>
+            Copyright &#9400; 2020, All rights reserved.
+            XyberXecurity
+        </footer>
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <!-- Optional JavaScript -->
+        <script src="form-validation.js"></script>
+    </div>
+</body>
+
+
+</html>

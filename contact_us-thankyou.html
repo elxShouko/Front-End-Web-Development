@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+
+<head>
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <link rel="stylesheet" href="contact_styles.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <title>XyberXecurity</title>
+
+</head>
+
+<body class="container shadow-lg p-0">
+
+
+   <main class="jumbotron">
+      
+      <h1 class="text-center">Thank You</h1>
+      <h3 class="text-center">
+         XyberXecurity thanks you personally for browsing through. Hope you are satisfied with our services. See you
+         again soon!
+      </h3>
+      <img src="thankyou.jpg" class="img-fluid" alt="Thank You!">
+      <!-- https://unsplash.com/photos/VyC0YSFRDTU -->
+   </main>
+
+
+
+
+   <script>
+      // Disable form submissions if there are invalid fields
+      (function () {
+         'use strict';
+         window.addEventListener('load', function () {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+               form.addEventListener('submit', function (event) {
+                  if (form.checkValidity() === false) {
+                     event.preventDefault();
+                     event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+               }, false);
+            });
+         }, false);
+      })();
+   </script>
+</body>
+
+</html>

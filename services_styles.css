@@ -1,0 +1,111 @@
+/* XyberXecurity Style */
+
+body {
+    max-width: 90%;
+    min-width: 70%;
+}
+
+#name {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(199, 199, 199, 0.692);
+}
+
+/* NavBar Styles */
+
+#titlenav {
+    background-color: #395697;
+}
+
+header {
+    font-family: 'Roboto Slab', serif;
+    background-image: url(whiteBG.jpg);
+}
+
+h1 {
+    font-family: 'Chilanka', cursive;
+}
+
+a.nav-link:hover {
+    background-color: black;
+}
+
+a.nav-link:visited {
+    background-color: darkblue;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+/* Cards Styles */
+
+.card-body {
+    padding: 0.5rem;
+}
+
+#mainBg {
+    background-color: #e4e3e3;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0;
+}
+
+.cardSet1 {
+    background-color: #c2c2c2;
+}
+
+.cardSet2 {
+    background-color: #c2c2c2;
+}
+
+.cardSet3 {
+    background-color: #c2c2c2;
+}
+
+h3.card-title {
+    font-size: 1.5rem;
+}
+
+h5.card-title {
+    font-size: 2rem;
+}
+
+p.card-text {
+    padding-bottom: 0.8rem;
+    line-height: 1.2rem;
+}
+
+/* Paragraph Styles */
+
+p {
+    text-align: center;
+}
+
+/* Left Column Styles */
+
+#consultation {
+    text-align: center;
+}
+
+/* Right Column Styles */
+
+#cyberSwat {
+    text-align: center;
+}
+
+/* Button Styles */
+
+/* Footer Styles */
+
+footer {
+    clear: both;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    background-color: #2859c4;
+}
